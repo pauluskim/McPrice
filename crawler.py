@@ -49,6 +49,7 @@ class cetizenSpider(scrapy.Spider):
 
     def save(self, detail):
         # Open database connection
+
         db = MySQLdb.connect("localhost", "jack", password, "roka")
 
         # prepare a cursor object using cursor() method
